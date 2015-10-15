@@ -1,10 +1,20 @@
-#nameHeading {
+.resumeHeading {
 font-family:avenir next;
-font-size: 29px;
-font-weight: bold;
+text-transform: uppercase;
+font-weight: 400;
 color: black;
+letter-spacing: 3pt;
 }
 
+.nameHeading {
+font-size: 2rem;
+font-weight: bold;
+}
+
+.selfDescription {
+font-size: 1rem;
+font-weight: 400;
+}
 .addressInfo {
 font-family:avenir next;
 color: black
