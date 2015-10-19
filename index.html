@@ -8,16 +8,15 @@
     <div class="jumbotron">
     <div id="navContainer">
         <ul>
-            <li><a href="index.html#about">About Me</a></li></li>
-            <li><a href="index.html#education">Education</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html#about" class="smoothScroll">About Me</a></li></li>
+            <li><a href="index.html#education" class="smoothScroll">Education</a></li>
+            <li><a href="index.html#experience" class="smoothScroll">Experience</a></li>
+            <li><a href="index.html#skills" class="smoothScroll">Skills</a></li>
+            <li><a href="index.html#projects" class="smoothScroll">Projects</a></li>
+            <li><a href="index.html#contact" class="smoothScroll">Contact</a></li>
         </ul>
         <h1 id="name">Liza Girsova</h1>
-        <h2 id="intro">Software Development Enthusiast</h2>
+        <h2 id="intro">Mathematics-Computer Science Major at Lawrence University</h2>
     </div>
     </div>
     </header>
@@ -25,14 +24,60 @@
     <div id="about">
         <h1 class="sectionTitle">About Me</h1>
         <img class="img-circle" src="resources/selfPortrait.jpg">
+        <div class="container">
+        <div class="about-developer">
+            <h4>Developer</h4>
+        </div>
+        <div class="about-musician">
+            <h4>Musician</h4>
+        </div>
+        <div class="about-athlete">
+            <h4>Athlete</h4>
+        </div>
+        <div class="about-traveler">
+            <h4>Traveler</h4>
+        </div>
+        </div>
     </div>
     <a name="education"></a>
     <div id="education">
         <h1 class="sectionTitle">Education</h1>
+        <p>I absolutely love to learn and continuous skill development is very important to me.</p>
+        <h3>Degree:</h3>
+        <p>Bachelor of Arts, Lawrence University, Appleton, Wisconsin</p>
+        <p>Mathematics-Computer Science Major and Music Minor (Emphasis on Music Composition)</p>
+        <h3>Courses I've enjoyed:</h3>
+        <h3>Books I've enjoyed:</h3>
     </div>
     <a name="experience"></a>
     <div id="experience">
         <h1 class="sectionTitle">Experience</h1>
+        <p>Selection of my professional experience</p>
+        <div id="experienceContainer1">
+            <div id="osDev">
+                <h3>Open Source Developer</h3>
+                <h4>Aug 2015-Present</h4>
+                <p class="hoverText">Contributed to open source project - Teleport:</p>
+                <p class="hoverText">Found and fixed a bug where Teleport completely ceased to work after the Yosemite upgrade</p>
+            </div>
+            <div id="iosDev">
+                <h3>iOS Development Intern</h3>
+                <h4>Online Lab Inc., May 2015-Present</h4>
+                <p class="hoverText">Expanded company into mobile app market by creating a framework that runs JavaScript web-apps natively on iOS devices by bridging Objective-C and JavaScript code</p>
+            </div>
+        </div>
+        <div id="experienceContainer2">
+            <div id="tutor">
+                <h3>Comp. Sci. Tutor & Lab Consultant</h3>
+                <h4>Lawrence University, Sept 2014-Present</h4>
+                <p class="hoverText">Play a key role in helping students establish computer science fundamentals by explaining concepts and providing programming help</p>
+            </div>
+            <div id="dbDev">
+                <h3>Database Development Intern</h3>
+                <h4>Grace Star Ltd., Jun-Aug 2014</h4>
+                <p class="hoverText">Boosted company efficiency by designing and developing a database using FileMaker Pro that streamlines the process of finding buyers and sellers</p>
+            </div>
+        </div>
     </div>
     <a name="skills"></a>
     <div id="skills">
@@ -46,21 +91,30 @@
             <p class="skillsDetail">My favorite text-editor is <b>Sublime Text</b> and I use <b>Brackets</b> for web-development</p>
             <p class="skillsDetail">I've used <b>OpenOffice Base</b>, <b>FileMaker Pro</b>, and <b>MySQL Workbench</b> for DB dev</p>
             <p class="skillsDetail">I'm a fan of <b>markdown</b> and use <b>MacDown</b> for note-taking</p>
-            <p class="skillsDetail">Version control is super important to me and I use <b>git/GitHub</b></p>
+            <p class="skillsDetail">Version control is super important to me and I use <b>git/<a href="https://github.com/egirsova">GitHub</a></b></p>
             <h2 class="skillsDesc">Domains:</h2>
-            <p class="skillsDetail">I've done my mix of <b>cocoa</b> and <b>iOS</b> development</p>
+            <p class="skillsDetail">I've done my share of <b>cocoa</b> and <b>iOS</b> development</p>
+            <p class="skillsDetail">This website was made to showcase my <b>web development</b> skills</p>
             <p class="skillsDetail">Currently working on a couple of <b>game development</b> projects</p>
             <p class="skillsDetail">I've also worked on <b>systems and database design</b></p>
-            <p class="skillsDetail">Familiarizing myself with the <b>agile development process</b></p>
+            <p class="skillsDetail">Starting to familiarize myself with the <b>agile development process</b></p>
+            <p class="skillsDetail">Getting into <b>open source development</b></p>
         </div>
     </div>
     <a name="projects"></a>
     <div id="projects">
         <h1 class="sectionTitle">Projects</h1>
+        <p>I enjoy development whether that be in the classroom or on my own.</p>
+        <p>Here is a sample of my major class and side-projects.</p>
+        <div id="project1">Island Escape</div>
+        <div id="project2">L.A.W.R.E.N.T.I.A.N.</div>
+        <div id="project3">Safie</div>
     </div>
     <a name="contact"></a>
     <div id="contact">
         <h1 class="sectionTitle">Contact</h1>
     </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </body>
 </html>

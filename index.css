@@ -1,7 +1,16 @@
 @import url('http://fonts.googleapis.com/css?family=Lato&subset=latin');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700);
+
+@font-face {
+    font-family: "Raleway";
+    src: url(resources/raleway_thin-webfont.ttf) format("truetype");
+}
 
 body {
-   margin: 0; 
+    margin: 0;
+    font-family: avenir next;
+    color: white;
 }
 
 #navContainer ul {
@@ -31,10 +40,10 @@ body {
 }
 
 #name {
-    font-family: "Lato";
+    font-family: "Raleway";
     color: #fff;
     padding-top: 1em;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 3pt;
     font-size: 3.5rem;
     text-align: center;
@@ -51,13 +60,15 @@ body {
 }
 
 #header {
-    background: #000 url('resources/jumbotronBackground16.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground16.jpg') no-repeat center center fixed;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     position: relative;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -65,11 +76,63 @@ body {
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
-    margin: auto;
     display: block;
+    color: black;
+}
+
+.about-also {
+padding-top: 3%;
+font-size: 21px;
+padding-bottom: 0.1%;
+}
+
+.tagline {
+    font-family: 'avenir next';
+    font-weight: 400;
+    font-size: 13pt; 
+}
+
+
+#about h4 {
+font-size: 18px;
+font-weight: 600;  
+}
+
+.container {
+ padding-top: 5%;   
+}
+
+.about-developer {
+ float: left;
+margin-left: 5%;
+width: 22%;
+font-size: 18px;
+font-weight: 600;
+}
+
+.about-musician {
+float: left;
+    width: 22%;
+font-size: 18px;
+font-weight: 600;
+}
+
+.about-athlete {
+float: left;
+    width: 22%;
+font-size: 18px;
+font-weight: 600;
+}
+
+.about-traveler {
+ float: left;
+    width: 22%;
+margin-right: 5%;
+font-size: 18px;
+font-weight: 600;
 }
 
 #container {
@@ -94,11 +157,11 @@ body {
 }
 
 #education {
-    background: #000 url('resources/jumbotronBackground10.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), #000 url('resources/jumbotronBackground10.jpg') no-repeat center center fixed;
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
@@ -107,21 +170,170 @@ body {
     color: white;
 }
 
+#education p {
+font-size: 18px;
+font-weight: 400;
+}
+
 #experience {
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
     display: block;
+    color: black;
+}
+
+#osDev 
+{
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground2.jpg') no-repeat center center;
+background-size: cover;
+width: 43%;
+margin-left: 5%; 
+margin-top: 15px;
+margin-bottom: 15px;
+height: 30%;
+float: left;
+border-radius: 3%;
+}
+
+#osDev:hover {
+ background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/jumbotronBackground2.jpg') no-repeat center center;
+background-size: cover;
+}
+
+#osDev .hoverText {
+ visibility:hidden;
+font-family: "avenir next";
+    padding: 3px;
+    font-size: 14px;
+    color:white;
+}
+
+#osDev:hover .hoverText {
+  visibility:visible;  
+}
+
+#iosDev {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/iphone6.jpg') no-repeat center center;
+background-size: cover;
+width: 43%;
+margin-right: 5%;
+margin-top: 15px;
+margin-bottom: 15px;
+height: 30%;
+float: right;
+border-radius: 3%;
+}
+
+#iosDev:hover {
+background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/iphone6.jpg') no-repeat center center;
+background-size: cover;
+}
+
+#iosDev .hoverText {
+ visibility:hidden;
+font-family: "avenir next";
+    padding: 3px;
+    font-size: 14px;
+    color:white;
+}
+
+#iosDev:hover .hoverText {
+  visibility:visible;  
+}
+
+#tutor
+{
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground15.jpeg') no-repeat center center;
+background-size: cover;
+width: 43%;
+margin-left: 5%; 
+padding-top: 10px; 
+margin-top: 15px;
+margin-bottom: 15px;
+height: 30%;
+float: left;
+border-radius: 3%;
+}
+
+#tutor:hover
+{
+background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/jumbotronBackground15.jpeg') no-repeat center center;
+background-size: cover;
+}
+
+#tutor .hoverText {
+ visibility:hidden;
+font-family: "avenir next";
+    padding: 3px;
+    font-size: 14px;
+    color:white;
+}
+
+#tutor:hover .hoverText {
+  visibility:visible;  
+}
+
+
+#dbDev {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/dbdev.jpg') no-repeat center center;
+background-size: cover;
+width: 43%;
+margin-right: 5%;
+padding-top: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
+height: 30%;
+float: right;
+border-radius: 3%;
+}
+
+#dbDev:hover {
+background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/dbdev.jpg') no-repeat center center;
+background-size: cover;
+}
+
+#dbDev .hoverText {
+ visibility:hidden;
+font-family: "avenir next";
+    padding: 3px;
+    font-size: 14px;
+    color:white;
+}
+
+#dbDev:hover .hoverText {
+  visibility:visible;  
+}
+
+#experience h3 {
+font-family: 'avenir next';
+    font-weight: 700;
+    font-size: 16pt;
+    color: white;    
+}
+
+#experience p {
+font-family: 'avenir next';
+color: black;   
+font-weight: 400;
+font-size: 18px;
+}
+
+#experience h4 {
+   font-family: 'avenir next';
+    font-weight: 500;
+    font-size: 12pt;
+    color: white;   
 }
 
 #skills {
-    background: #000 url('resources/jumbotronBackground7.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25)), #000 url('resources/jumbotronBackground7.jpg') no-repeat center center fixed;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
@@ -129,11 +341,11 @@ body {
 }
 
 #page {
-    margin-left: 570;
-    maring-right: 300;
+    margin-left: 46.5%;
     align-content: center;
     background-color:none;
     position:relative;
+    color: black
 }
 
 .skillsDesc {
@@ -146,47 +358,68 @@ body {
 .skillsDetail {
     font-family: 'avenir next';
     font-weight: 400;
+    font-size: 1vw;
+}
+
+.skillsDetail a {
+    font-family: 'avenir next';
+    font-weight: 700;
     font-size: 9pt;
+    color: 154A67;
 }
 
 #projects {
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
     display: block;
+    color: black;
+}
+
+#project1 {
+float: left;
+margin-left: 10%;
+}
+
+#project2 {
+display: inline-block;
+}
+
+#project3 {
+float: right;
+margin-right: 10%;    
 }
 
 #contact {
-    background: #000 url('resources/jumbotronBackground6.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground6.jpg') no-repeat center center fixed;
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 120%;
+    height: 122%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
     display: block;
     background-color:#F5F5F5;
-    color:white;
 }
 
 .img-circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 10px;
 }
 
 .sectionTitle {
-    font-family: "avenir next";
-    font-weight: 300;
+    font-family: "Raleway";
+    font-weight: bold;
     letter-spacing: 4pt;
     text-align: center;
-    padding-top: 85px;
+    padding-top: 6.5%;
     align-content: center;
     align-items: center;
 }
