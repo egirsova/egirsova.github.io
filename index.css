@@ -213,7 +213,7 @@ padding: 1%;
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 122%;
+    height: 110%;
     background-size: cover;
     overflow: hidden;
     margin: auto;
@@ -221,147 +221,22 @@ padding: 1%;
     color: black;
 }
 
-#osDev 
+#experienceContainer {
+overflow: scroll;
+width: 100%;
+white-space: nowrap;
+padding-top: 3%;
+}
+
+.experienceSection
 {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground2_smaller.jpg') no-repeat center center;
-background-size: cover;
-width: 43%;
-margin-left: 5%; 
-margin-top: 15px;
-margin-bottom: 15px;
-height: 30%;
-float: left;
-border-radius: 3%;
-}
-
-#osDev:hover {
- background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/jumbotronBackground2_smaller.jpg') no-repeat center center;
-background-size: cover;
-}
-
-#osDev .hoverText {
- visibility:hidden;
-font-family: "avenir next";
-    padding: 3px;
-    font-size: 14px;
-    color:white;
-}
-
-#osDev:hover .hoverText {
-  visibility:visible;  
-}
-
-#iosDev {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/iphone6_smaller.jpg') no-repeat center center;
-background-size: cover;
-width: 43%;
-margin-right: 5%;
-margin-top: 15px;
-margin-bottom: 15px;
-height: 30%;
-float: right;
-border-radius: 3%;
-}
-
-#iosDev:hover {
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/iphone6_smaller.jpg') no-repeat center center;
-background-size: cover;
-}
-
-#iosDev .hoverText {
- visibility:hidden;
-font-family: "avenir next";
-    padding: 3px;
-    font-size: 14px;
-    color:white;
-}
-
-#iosDev:hover .hoverText {
-  visibility:visible;  
-}
-
-#tutor
-{
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground15_smaller.jpg') no-repeat center center;
-background-size: cover;
-width: 43%;
-margin-left: 5%; 
-padding-top: 10px; 
-margin-top: 15px;
-margin-bottom: 15px;
-height: 30%;
-float: left;
-border-radius: 3%;
-}
-
-#tutor:hover
-{
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/jumbotronBackground15_smaller.jpg') no-repeat center center;
-background-size: cover;
-}
-
-#tutor .hoverText {
- visibility:hidden;
-font-family: "avenir next";
-    padding: 3px;
-    font-size: 14px;
-    color:white;
-}
-
-#tutor:hover .hoverText {
-  visibility:visible;  
-}
-
-
-#dbDev {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/dbdev_smaller.jpg') no-repeat center center;
-background-size: cover;
-width: 43%;
-margin-right: 5%;
-padding-top: 10px;
-margin-top: 15px;
-margin-bottom: 15px;
-height: 30%;
-float: right;
-border-radius: 3%;
-}
-
-#dbDev:hover {
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), #000 url('resources/dbdev_smaller.jpg') no-repeat center center;
-background-size: cover;
-}
-
-#dbDev .hoverText {
- visibility:hidden;
-font-family: "avenir next";
-    padding: 3px;
-    font-size: 14px;
-    color:white;
-}
-
-#dbDev:hover .hoverText {
-  visibility:visible;  
-}
-
-#experience h3 {
-font-family: 'avenir next';
-    font-weight: 700;
-    font-size: 16pt;
-    color: white;    
-}
-
-#experience p {
-font-family: 'avenir next';
-color: black;   
-font-weight: 400;
-font-size: 18px;
-}
-
-#experience h4 {
-   font-family: 'avenir next';
-    font-weight: 500;
-    font-size: 12pt;
-    color: white;   
+width: 48%;
+padding: 0% 1% 2% 1%;
+color: black;
+display: inline-block;
+vertical-align: middle;
+white-space: normal;
+text-align: center;
 }
 
 #skills {
