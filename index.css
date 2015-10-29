@@ -60,7 +60,7 @@ body {
 }
 
 #header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground16_smaller.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #000 url('resources/landscape.jpg') no-repeat center center fixed;
     width: 100%;
     height: 122%;
     background-size: cover;
@@ -76,7 +76,7 @@ body {
     text-align: center;
     align-content: center;
     width: 100%;
-    height: 122%;
+    height: 130%;
     background-size: cover;
     overflow: hidden;
     display: block;
@@ -169,7 +169,8 @@ font-weight: 600;
 }
 
 #education {
-    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), #000 url('resources/jumbotronBackground10_smaller.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/library.jpg') no-repeat center center fixed;
+    /*background: #F5F5F5;*/
     text-align: center;
     align-content: center;
     width: 100%;
@@ -185,6 +186,27 @@ font-weight: 600;
 #education p {
 font-size: 18px;
 font-weight: 400;
+}
+
+.edu-degree {
+float: left;
+width: 31%;
+padding-top: 5%;
+padding: 1%;
+}
+
+.edu-courses {
+float: left;
+width: 31%;
+padding-top: 10%;
+padding: 1%;
+}
+
+.edu-books {
+float: left;
+width: 31%;
+padding-top: 10%;
+padding: 1%;
 }
 
 #experience {
@@ -381,6 +403,7 @@ font-size: 18px;
 }
 
 #projects {
+    background: #F5F5F5;
     text-align: center;
     align-content: center;
     width: 100%;
@@ -394,20 +417,24 @@ font-size: 18px;
 
 #project1 {
 float: left;
-margin-left: 10%;
+width: 33%;
+padding-top: 5%;
 }
 
 #project2 {
-display: inline-block;
+float: left;
+width: 33%;
+padding-top: 5%;
 }
 
 #project3 {
-float: right;
-margin-right: 10%;    
+float: left;
+width: 33%;
+padding-top: 5%;
 }
 
 #contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground6_smaller.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #000 url('resources/jumbotronBackground6_smaller.jpg') no-repeat center center fixed; 
     text-align: center;
     align-content: center;
     width: 100%;
