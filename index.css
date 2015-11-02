@@ -354,13 +354,13 @@ text-align: center;
 #project1 {
 float: left;
 width: 32.25%;
-padding-top: 3.75%;
 padding-left: 1%;
+padding-top: 3%;
 }
 
 #imageContainer {
-height: 21%;
-padding-bottom: 3%;
+float: left;
+padding-bottom: 8.5%;
 }
 
 #laptop {
