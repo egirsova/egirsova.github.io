@@ -228,7 +228,7 @@
     var isFixed = false;
     var $w = $(window);
     var firstPageHeight = $('#header').height()
-    var navHomeY = nav.offset().top+firstPageHeight-2;
+    var navHomeY = nav.offset().top;
     $w.scroll(function() {
         var scrollTop = $w.scrollTop();
         var shouldBeFixed = scrollTop > navHomeY;
