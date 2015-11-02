@@ -7,6 +7,7 @@
     <div class="wrapper">
     <header id="header">
     <div class="jumbotron">
+    <div id="navWrap">
     <div id="navContainer">
         <ul>
             <li><a href="index.html#about" class="smoothScroll">About Me</a></li></li>
@@ -14,10 +15,12 @@
             <li><a href="index.html#experience" class="smoothScroll">Experience</a></li>
             <li><a href="index.html#skills" class="smoothScroll">Skills</a></li>
             <li><a href="index.html#projects" class="smoothScroll">Projects</a></li>
+            <li><a href="index.html#contact" class="smoothScroll">Contact</a></li>
         </ul>
+    </div>
+    </div>
         <h1 id="name">Liza Girsova</h1>
         <h2 id="intro">Mathematics-Computer Science Major at Lawrence University</h2>
-    </div>
     </div>
     </header>
     <a name="about"></a>
@@ -28,7 +31,7 @@
         <div class="about-developer">
             <img class="about-icon" src="resources/icons/1446164984_responsive-web.png">
             <h4>Developer</h4>
-            <p>I'm always excited to solve interesting problems and want to optimize people's lives</p>
+            <p>I'm always excited to solve interesting problems and look forward to making a difference</p>
         </div>
         <div class="about-musician">
             <img class="about-icon" src="resources/icons/1446164783_keyboards.png">
@@ -38,7 +41,7 @@
         <div class="about-athlete">
             <img class="about-icon" src="resources/icons/1446164844_gym.png">
             <h4>Athlete</h4>
-            <p>I enjoy sports and am part of Lawrence's varsity soccer and track teams</p>
+            <p>I enjoy sports and am part of Lawrence University's varsity soccer and track teams</p>
         </div>
         <div class="about-traveler">
             <img class="about-icon" src="resources/icons/1446164890_Old-Car-2.png">
@@ -171,6 +174,7 @@
             <h3>Island Escape</h3>
             <ul>
                 <li>A 3D local multiplayer game for Mac OS X that uses iOS devices as controllers</li>
+                <li>The objective of the game is to escape from a zombie infested island</li>
                 <li>Developing as a solo project for my Senior Experience</li>
                 <li>Technologies: Swift, SceneKit, Xcode</li>
             </ul>
@@ -189,14 +193,15 @@
             <img src="resources/icons/smartphone.png" width="50%">
             <h3>Safie</h3>
             <ul>
-                <li>HTML5 mobile app that promotes safety by allowing you to take a photo of an individual when you are feeling vulnerable.</li>
-                <li>Notifies a "trusted person" and stores the image and location info on a secure server.</li>
+                <li>HTML5 mobile app that allows you to take a photo of someone when feeling vulnerable.</li>
+                <li>App notifies a "trusted person" and stores the image and location info on a secure server.</li>
                 <li>Developed at the 48-hour Allianz Hack Risk Hackathon in London, UK, in a team of 4</li>
                 <li>Technologies: HTML, CSS, JavaScript, Meteor</li>
             </ul>
         </div>
     </div>
     </div>
+    <a name="contact"></a>
     <div class="footer">
         <a class="image-link" href="mailto:liza@girsovs.com?">
             <img src="resources/icons/mail.png" title="Email" width="4%">
@@ -212,6 +217,60 @@
         </a>
     </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+    <script type='text/javascript'>
+//<![CDATA[ 
+
+ $(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('#navContainer');
+    var navText = $('#navcontainer ul li a');
+    var isFixed = false;
+    var $w = $(window);
+    var firstPageHeight = $('#header').height()
+    var navHomeY = nav.offset().top+firstPageHeight-2;
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width(),
+                backgroundColor: 'black',
+                opacity: 1,
+                zIndex: 1
+            });
+            navText.css({
+               color: 'white'
+            });
+            
+            isFixed = true;
+        }
+        else if (shouldBeFixed && !isFixed && scrollTop == 0) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width(),
+                backgroundColor: 'none',
+                opacity: 1,
+                zIndex: 1
+            });
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static',
+                backgroundColor: 'none'
+            });
+            isFixed = false;
+        }
+    });
+});
+
+//]]>  
+</script>
 </body>
 </html>
