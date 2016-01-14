@@ -1,3 +1,18 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700);
+
+@font-face {
+    font-family: "Raleway";
+    src: url(resources/raleway_thin-webfont.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: avenir next;
+    color: white;
+}
+
 #navWrap {
     height: 25px;
     z-index:1;
