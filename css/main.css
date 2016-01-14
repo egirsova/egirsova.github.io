@@ -1,0 +1,69 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700);
+
+@font-face {
+    font-family: "Raleway";
+    src: url(resources/raleway_thin-webfont.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: avenir next;
+    color: white;
+}
+
+#navWrap {
+    height: 25px;
+    z-index:1;
+}
+
+#navContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-family: avenir next;
+    z-index:1;
+    background-color: black;
+    border-radius: 4%;
+}
+
+#navContainer ul li {
+    display: inline;
+    z-index:1;
+}
+
+#navContainer ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #fff;
+    background-color: none; 
+    font-size: 0.8em;
+    z-index:1;
+}
+
+#navcontainer ul li a:hover {
+    color: #fff;
+    z-index:1;
+    background-color: dimgray;
+    opacity: 2;
+    border-radius: 60%;
+}
+.hyperlink {
+ color: 225D80;   
+}
+
+.image-link {
+    text-decoration: none;
+}
+
+.wrapper {
+margin: 0 auto -4em;
+}
+
+.footer {
+height: 4em;
+background-color: black;
+text-align: center;
+}
