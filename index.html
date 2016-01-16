@@ -25,28 +25,24 @@
     </header>
     <a name="about"></a>
     <div id="about">
-        <h1 class="sectionTitle">About Me</h1>
+        <h1 class="sectionTitle">Hi, I'm Liza</h1>
         <img class="img-circle" src="resources/profileMoreSaturated.jpg">
         <div class="container">
         <div class="about-developer">
-            <img class="about-icon" src="resources/icons/1446164984_responsive-web.png">
             <h4>Developer</h4>
-            <p>I'm always excited to solve interesting problems and look forward to making a difference</p>
+            <p>I genuinely enjoy software development and am always looking for new languages to learn and new technologies to experiment with</p>
         </div>
         <div class="about-musician">
-            <img class="about-icon" src="resources/icons/1446164783_keyboards.png">
             <h4>Musician</h4>
-            <p>I'm passionate about composing and listening to music</p>
+            <p>A music minor, music is important to me and I'm passionate about composing and listening to music</p>
         </div>
         <div class="about-athlete">
-            <img class="about-icon" src="resources/icons/1446164844_gym.png">
             <h4>Athlete</h4>
-            <p>I enjoy sports and am part of Lawrence University's varsity soccer and track teams</p>
+            <p>Sports are a big part of my life. I am a varsity athlete at Lawrence University, representing their soccer and track teams</p>
         </div>
         <div class="about-traveler">
-            <img class="about-icon" src="resources/icons/1446164890_Old-Car-2.png">
             <h4>Traveler</h4>
-            <p>Originally from Russia, I have lived in East Asia since four years old and am currently studying in the United States</p>
+            <p>Originally from Russia, I have lived in East Asia since four years old and am currently studying Computer Science in the United States</p>
         </div>
         </div>
     </div>
@@ -103,7 +99,8 @@
                 <h4>Aug 2015-Present</h4>
                 <ul style="list-style-type: bullet">
                 <li>Contributed to open source project - <a class="hyperlink" target="_blank" href="http://www.abyssoft.com/software/teleport/">Teleport</a>:</li>
-                <li>Found and fixed a bug where Teleport completely ceased to work after the Yosemite upgrade</li>
+                <li>Found and fixed a high-severity bug that rendered Teleport completely unusable</li>
+                <li>The bug was associated with at least 15% of the issues listed in the forums and 23% of the issues listed on GitHub</li>
                 </ul>
             </div>
             <div class="experienceSection">
@@ -112,7 +109,8 @@
                 <h3>iOS Development Intern</h3>
                 <h4>Online Lab Inc., May 2015-Present</h4>
                 <ul style="list-style-type: bullet">
-                <li>Expanded company into mobile app market by creating a framework that runs JavaScript web-apps natively on iOS devices by bridging Objective-C and JavaScript code</li>
+                <li>Expanded company into mobile market within 1 month:</li>
+                <li>Built an app that bridges Objective-C and JavaScript code, allowing their web-apps to use iOS frameworks and run "natively" on iOS devices</li>
                 <li>Their first app to use this framework is now available on the <a class="hyperlink" target="_blank" href="https://geo.itunes.apple.com/us/app/taksi-komfort/id1015673949?mt=8">App Store</a></li>
             </ul>
             </div>
@@ -122,7 +120,8 @@
                 <h3>Computer Science Tutor & Lab Consultant</h3>
                 <h4>Lawrence University, Sept 2014-Present</h4>
                 <ul style="list-style-type: bullet">
-                <li>Play a key role in helping students establish computer science fundamentals by explaining concepts and providing programming help</li>
+                <li>Help students establish computer science fundamentals by explaining core concepts and providing programming help</li>
+                    <li>Tutor for the following courses: Intro to Computer Science (Java), Intermediate Programming (Java), Intro Scientific Programming (C), Web Client Programming (JavaScript, HTML, CSS)</li>
                 </ul>
             </div>
             <div class="experienceSection">
@@ -131,7 +130,8 @@
                 <h3>Volunteer Database Developer</h3>
                 <h4>Grace Star Ltd., Jun-Aug 2014</h4>
                 <ul style="list-style-type: bullet">
-                <li>Boosted company efficiency by designing and developing a database using FileMaker Pro that streamlines the process of finding buyers and sellers</li>
+                <li>Proposed to develop a database for a small local business</li>
+                <li>Boosted company efficiency by designing, developing, and implementing a database using OpenOffice Base (SQL) and FileMaker Pro that streamlines the process of finding buyers and sellers</li>
                 </ul>
             </div>
         </div>
@@ -190,7 +190,9 @@
             </ul>
         </div>
         <div id="project3">
+            <div class="imgWrap">
             <img src="resources/icons/smartphone.png" width="50%">
+            </div>
             <h3>Safie</h3>
             <ul>
                 <li>HTML5 mobile app that allows you to take a photo of someone when feeling vulnerable.</li>
@@ -238,12 +240,10 @@
                 top: 0,
                 left: nav.offset().left,
                 width: nav.width(),
-                backgroundColor: 'black',
-                opacity: 1,
                 zIndex: 1
             });
             navText.css({
-               color: 'white'
+               color: 'black'
             });
             
             isFixed = true;
@@ -254,8 +254,6 @@
                 top: 0,
                 left: nav.offset().left,
                 width: nav.width(),
-                backgroundColor: 'none',
-                opacity: 1,
                 zIndex: 1
             });
         }
@@ -263,7 +261,6 @@
         {
             nav.css({
                 position: 'static',
-                backgroundColor: 'none'
             });
             isFixed = false;
         }
