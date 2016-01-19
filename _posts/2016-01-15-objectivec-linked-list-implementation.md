@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Objective-C Implementation of a Linked List"
+title: "Simple Objective-C Implementation of a Linked List"
 date: 2016-01-15
 ---
-
-# Simple Objective-C Implementation of a Linked List
 
 In prepping for a couple of technical interviews I decided that I needed to come up with an implementation of a singly linked list that was not overwhelmingly robust and that could be coded in a matter of minutes.
 
@@ -24,14 +22,14 @@ The interface for the `Node` is as follows:
 
 **Node Interface**
 
-~~~objective-c
+{% highlight objective-c linenos %}
 @interface Node : NSObject
 @property (nonatomic, strong) id obj;
 @property (nonatomic, strong) Node *next;
 
 - (id)init;
 @end
-~~~
+{% endhighlight %}
 
 The implementation of the `Node` class is straight forward: we just need to create an `init` method to initialize an empty node.
 
