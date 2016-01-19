@@ -22,14 +22,14 @@ The interface for the `Node` is as follows:
 
 **Node Interface**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 @interface Node : NSObject
 @property (nonatomic, strong) id obj;
 @property (nonatomic, strong) Node *next;
 
 - (id)init;
 @end
-{% endhighlight %}
+~~~
 
 The implementation of the `Node` class is straight forward: we just need to create an `init` method to initialize an empty node.
 
