@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: avenir next;
-    color: black;
+    color: white;
 }
 
 #navWrap {
@@ -20,36 +20,39 @@ body {
 
 #navContainer ul {
     list-style-type: none;
+    height: 25px;
     margin: 0;
     padding: 8px;
     text-align: center;
     font-family: avenir next;
     z-index:1;
-    background-color: black;
-    border-radius: 4%;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 1%;
+    color: black;
 }
 
 #navContainer ul li {
     display: inline;
     z-index:1;
+    margin-top: 3em;
 }
 
 #navContainer ul li a {
     text-decoration: none;
-    padding: .2em 1em;
-    color: #fff;
-    background-color: none; 
-    font-size: 0.8em;
+    padding: 0.2em 2em;
+    font-size: 0.9em;
+    font-weight: 500;
     z-index:1;
+    color: black;
 }
 
 #navcontainer ul li a:hover {
-    color: #fff;
     z-index:1;
-    background-color: dimgray;
-    opacity: 2;
     border-radius: 60%;
-}
+    color: black;
+    text-decoration: underline;
+} 
+
 .hyperlink {
  color: 225D80;   
 }
