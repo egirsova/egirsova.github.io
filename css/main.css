@@ -9,8 +9,10 @@
 
 body {
     margin: 10%;
-    font-family: avenir next;
-    color: black;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #515151;
+  background-color: #fff;
 }
 
 #navWrap {
