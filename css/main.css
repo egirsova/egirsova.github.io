@@ -8,9 +8,10 @@
 }
 
 body {
-    margin: 10%;
+    margin: 5%;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 1em;
     color: #515151;
   background-color: #fff;
 }
