@@ -12,7 +12,7 @@ Below is a description of the implementation, and everything should be coded in 
 
 So, let's go ahead and get started.
 
-### Node Class
+#### Node Class
 
 Before implementing the linked list we'll first need to create a `Node` class, since a linked list is essentially a list of connected nodes.
 
@@ -35,7 +35,7 @@ The implementation of the `Node` class is straight forward: we just need to crea
 
 **Node Implementation**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 @implementation Node
 @synthesize obj;
 @synthesize next;
@@ -46,9 +46,9 @@ The implementation of the `Node` class is straight forward: we just need to crea
     return self;
 }
 @end
-{% endhighlight %}
+~~~
 
-### Linked List Class
+#### Linked List Class
 
 Once you have the `Node` class written out, you'll be able to use it in your linked list implementation.
 
@@ -60,7 +60,7 @@ The `pushBack` method will simply initialize a new node using the passed in valu
 
 **Linked List Interface**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 @interface LinkedList : NSObject
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;
@@ -68,7 +68,7 @@ The `pushBack` method will simply initialize a new node using the passed in valu
 - (id)init;
 - (void)pushBack:(id)anObject;
 @end
-{% endhighlight %}
+~~~
 
 The key to the implementation of our Linked List is the `pushBack` method. What we're essentially doing there is initializing a new `Node` and then checking whether or not the linked list already has nodes in it (aka if `head` is `nil`). 
 
@@ -78,7 +78,7 @@ If, on the other hand, nodes already exist in the linked list (aka `head` is not
 
 **Linked List Implementation**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 @implementation LinkedList
 @synthesize head;
 @synthesize tail;
@@ -108,7 +108,7 @@ If, on the other hand, nodes already exist in the linked list (aka `head` is not
     }
 }
 @end
-{% endhighlight %}
+~~~
 
 That's it for the actual implementation! 
 
@@ -122,7 +122,7 @@ Putting it all together, your single `main.m` file should look like this:
 
 **`main`.m file**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 #import <Foundation/Foundation.h>
 
 // Node Class
@@ -197,18 +197,18 @@ int main (int argc, const char * argv[])
     }
     return 0;
 }
-{% endhighlight %}
+~~~
 
 You should be able to implement this on the spot relatively quickly and without much thought and trouble. See below if you want to add some more functionality.
 
-### Useful Additions
+#### Useful Additions
 
-#### Printing the List
+##### Printing the List
 What good would having a linked list be if you can't really see what you're working with? Below is a simple method you can add to your `@implementation` of `LinkedList` to be able to print out and view the contents of the list. Just make sure you introduce it in your `@interface` first, using: `- (void)print;`
 
 **Print**
 
-{% highlight objective-c linenos %}
+~~~objective-c
 - (void)print
 {
     Node *itr = self.head;
@@ -217,4 +217,4 @@ What good would having a linked list be if you can't really see what you're work
         itr = itr.next;
     }
 }
-{% endhighlight %}
+~~~
