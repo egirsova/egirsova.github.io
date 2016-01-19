@@ -2,6 +2,3 @@ name: Liza Girsova
 # markdown: kramdown
 markdown: redcarpet
 url: http://egirsova.github.io
-syntax-highlighting:
-  enabled : true
-  css: syntax.css
